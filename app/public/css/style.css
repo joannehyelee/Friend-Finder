@@ -1,0 +1,24 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333; }
+
+.jumbotron {
+  margin-top: 30px;
+  padding: 2em;
+  background: #E1A9CA; }
+
+.pa {
+  padding: 2em; }
+
+.pb {
+  padding-bottom: 0.5em; }
+
+.btn-info {
+  background: #E1A9CA;
+  border-color: #E1A9CA; }
+
+.btn:hover, .btn:active, .btn:focus {
+  background: #D683B4 !important;
+  border-color: #D683B4 !important;
+  outline: none !important;
+  box-shadow: none !important; }

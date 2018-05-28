@@ -1,0 +1,36 @@
+$primary-color: #333;
+$pink: #E1A9CA;
+$dark-pink: #D683B4;
+$spacing: 2em;
+$spacing-bottom: 0.5em;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: $primary-color;
+}
+
+.jumbotron {
+    margin-top: 30px;
+    padding: $spacing;
+    background: $pink;
+}
+
+.pa {
+    padding: $spacing;
+}
+
+.pb {
+    padding-bottom: $spacing-bottom;
+}
+
+.btn-info {
+    background: $pink;
+    border-color: $pink;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    background: $dark-pink !important;
+    border-color: $dark-pink !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
