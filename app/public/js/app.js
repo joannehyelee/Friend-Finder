@@ -6,23 +6,27 @@ $(document).ready(function(){
 
         // When user hits submit, grab information all the fields
         var answers = {
-            name: $("#name").val().trim(),
-            image: $("#image").val().trim(),
-            firstQuestion: $("#first-question").val().trim(),
-            secondQuestion: $("#second-question").val().trim(),
-            thirdQuestion: $("#third-question").val().trim(),
-            fourthQuestion: $("#fourth-question").val().trim(),
-            fifthQuestion: $("#fifth-question").val().trim(),
-            sixthQuestion: $("#sixth-question").val().trim(),
-            seventhQuestion: $("#seventh-question").val().trim(),
-            eighthQuestion: $("#eight-question").val().trim(),
-            ninthQuestion: $("#ninth-question").val().trim(),
-            tenthQuestion: $("#tenth-question").val().trim()
+            "name": $("#name").val().trim(),
+            "image": $("#image").val().trim(),
+            "scores": [
+                $("#first-question").val().trim(),
+                $("#second-question").val().trim(),
+                $("#third-question").val().trim(),
+                $("#fourth-question").val().trim(),
+                $("#fifth-question").val().trim(),
+                $("#sixth-question").val().trim(),
+                $("#seventh-question").val().trim(),
+                $("#eight-question").val().trim(),
+                $("#ninth-question").val().trim(),
+                $("#tenth-question").val().trim()
+            ]
         };
         console.log(answers);
 
         $.post("/api/friends", answers, function(data){
-            
+            if (data) {
+                console.log(data);
+            }
         });
 
     });
